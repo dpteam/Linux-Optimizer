@@ -166,7 +166,7 @@ sysctl_optimizations() {
     sleep 0.5
 
     ## Replace the new sysctl.conf file.
-    wget "https://raw.githubusercontent.com/hawshemi/Linux-Optimizer/main/files/sysctl.conf" -q -O $SYS_PATH 
+    wget "https://raw.githubusercontent.com/dpteama/Linux-Optimizer/main/files/sysctl.conf" -q -O $SYS_PATH 
 
     sysctl -p
     echo 

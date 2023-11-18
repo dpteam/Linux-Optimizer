@@ -7,7 +7,7 @@
     - Check and add 127.0.1.1 and server hostname to `/etc/hosts`.
     
     *Original `hosts` file is backed up at `/etc/hosts.bak`.*
-    - Add `1.1.1.1`, `1.0.0.1`, `8.8.8.8` and `8.8.4.4` to `/etc/resolv.conf`.
+    - Add `77.88.8.8` and `1.1.1.1` to `/etc/resolv.conf`.
     
     *Original `dns` file is backed up at `/etc/resolv.conf.bak`.*
 
@@ -46,7 +46,7 @@
 7. Enable `IPv6` Support.
 
 
-8. Optimize the [SYSCTL](https://github.com/hawshemi/Linux-Optimizer/blob/main/files/sysctl.conf) Configs:
+8. Optimize the [SYSCTL](https://github.com/dpteam/Linux-Optimizer/blob/main/files/sysctl.conf) Configs:
     - Optimize `SWAP`.
     - Optimize Network Settings.
     - Activate `BBR` _(`BBRv3` with XanMod)_.
@@ -55,7 +55,7 @@
     *Original file is backed up at `/etc/sysctl.conf.bak`.*
 
     
-9. Optimize [SSH](https://github.com/hawshemi/Linux-Optimizer/blob/main/files/sshd_config):
+9. Optimize [SSH](https://github.com/dpteam/Linux-Optimizer/blob/main/files/sshd_config):
     - Disable DNS lookups for connecting clients.
     - Remove less efficient encryption ciphers.
     - Enable and Configure TCP keep-alive messages.
@@ -66,7 +66,7 @@
     *Original file is backed up at `/etc/ssh/sshd_config.bak`.*
    
 
-10. Optimize the [System Limits](https://github.com/hawshemi/Linux-Optimizer/blob/main/files/profile):
+10. Optimize the [System Limits](https://github.com/dpteam/Linux-Optimizer/blob/main/files/profile):
     - Soft and Hard ulimit `-c -d -f -i -l -n -q -s -u -v -x` optimizations.
     
     
@@ -101,7 +101,7 @@ sudo -i
 ```
 #### Then:
 ```
-wget "https://raw.githubusercontent.com/hawshemi/Linux-Optimizer/main/linux-optimizer.sh" -O linux-optimizer.sh && chmod +x linux-optimizer.sh && bash linux-optimizer.sh 
+wget "https://raw.githubusercontent.com/dpteam/Linux-Optimizer/main/linux-optimizer.sh" -O linux-optimizer.sh && chmod +x linux-optimizer.sh && bash linux-optimizer.sh 
 ```
 
 

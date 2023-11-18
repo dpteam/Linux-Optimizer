@@ -127,11 +127,9 @@ fix_dns(){
 
     sed -i '/nameserver/d' $DNS_PATH
 
+    echo "nameserver 77.88.8.8" >> $DNS_PATH
     echo "nameserver 1.1.1.1" >> $DNS_PATH
-    echo "nameserver 1.0.0.1" >> $DNS_PATH
-    echo "nameserver 8.8.8.8" >> $DNS_PATH
-    echo "nameserver 8.8.4.4" >> $DNS_PATH
-
+    
     green_msg "DNS Fixed Temporarily."
     echo 
     sleep 0.5
